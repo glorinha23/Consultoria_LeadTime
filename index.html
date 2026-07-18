@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLead - Consultoria & Mentoria</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <header class="navbar">
+        <div class="logo">TechLead<span>Consultoria</span></div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Otimize seus processos e lidere com eficiência técnica.</h1>
+            <p>Mentoria especializada em gestão operacional, engenharia de processos e soluções sob medida para o seu negócio.</p>
+            <button id="btnCTA" class="btn-primary">Quero Saber Mais</button>
+        </div>
+    </section>
+
+    
+    <section id="contato" class="contact-section">
+        <h2>Fale Conosco</h2>
+        <p>Preencha os dados abaixo para receber um diagnóstico inicial gratuito.</p>
+        
+        <form id="formContato" class="form-container">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required placeholder="Seu nome completo">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="cep">CEP (Preenchimento Automático):</label>
+                <input type="text" id="cep" maxlength="8" required placeholder="Digite apenas números (Ex: 01001000)">
+                <small id="cepErro" class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" readonly placeholder="Rua, Bairro, Cidade - UF">
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4" required placeholder="Como podemos ajudar o seu negócio?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+
+        
+        <div id="mensagemSucesso" class="success-box hidden"></div>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
